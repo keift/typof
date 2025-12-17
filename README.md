@@ -40,12 +40,12 @@
 
 ## About
 
-Extract the valid types.
+Infers types.
 
 ## Features
 
-- Extracts multiple types
-- Extracts integer and float types
+- Infers multiple types
+- Infers integer and float types
 - It infers the type from a string
 - There are simple type converters
 
@@ -104,7 +104,7 @@ import { typof } from 'typof';
 
 `typof(value)`
 
-Extract the valid types.
+Infers types.
 
 > | Parameter | Default | Description                         |
 > | --------- | ------- | ----------------------------------- |
