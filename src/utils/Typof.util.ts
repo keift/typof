@@ -103,3 +103,11 @@ export const array = <Value>(value: Value): unknown[] | Value => {
 export const date = (value: unknown) => {
   return new Date(value as string);
 };
+
+export const _null = <Value>(value: Value): null | Value => {
+  return typof(value).includes('null') ? null : value;
+};
+
+export const _undefined = <Value>(value: Value): undefined | Value => {
+  return typof(value).includes('undefined') ? undefined : value;
+};
