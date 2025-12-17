@@ -8,8 +8,6 @@
 [Function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 [Promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 [Void]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Undefined
-[ReadOptionsDefault]: https://github.com/fabiospampinato/atomically/blob/master/src/constants.ts#L15
-[WriteOptionsDefault]: https://github.com/fabiospampinato/atomically/blob/master/src/constants.ts#L17
 [Types]: ./src/types/Types.type.ts
 
 <div align="center">
