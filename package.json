@@ -1,7 +1,7 @@
 {
   "name": "typof",
   "version": "1.0.2",
-  "description": "Extract the valid types.",
+  "description": "Infer types.",
   "license": "MIT",
   "homepage": "https://github.com/keift/typof",
   "bugs": "https://github.com/keift/typof/issues",
@@ -29,7 +29,13 @@
   "keywords": [
     "type",
     "typeof",
+    "string",
+    "number",
     "integer",
-    "float"
+    "float",
+    "boolean",
+    "object",
+    "array",
+    "date"
   ]
 }
