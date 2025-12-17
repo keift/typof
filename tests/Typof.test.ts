@@ -25,5 +25,3 @@ if (string(typof(null)) !== '["null"]') throw new Error(`❌ Error: ${string(typ
 
 if (string(typof('undefined')) !== '["string","undefined"]') throw new Error(`❌ Error: ${string(typof('undefined'))}`);
 if (string(typof(undefined)) !== '["undefined"]') throw new Error(`❌ Error: ${string(typof(undefined))}`);
-
-console.log(typof(new Set()));
