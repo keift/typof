@@ -279,7 +279,7 @@ Convert to date.
 > | --------- | ------- | ----------------------------- |
 > | value     |         | Unknown<br/>Value to convert. |
 >
-> returns [Array] | Value
+> returns [Date] | Value
 >
 > Example:
 >
