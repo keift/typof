@@ -44,7 +44,7 @@ Extract the valid types.
 
 ## Features
 
-- Extract multiple types
+- Extracts multiple types
 - Extracts integer and float types
 - It infers the type from a string
 - There are simple type converters
