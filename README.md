@@ -46,10 +46,10 @@ Extract the valid types.
 
 ## Features
 
-- Respects CommonJS
-- Secure with [Atomically](https://github.com/fabiospampinato/atomically)
-- Functional with [FS Extra](https://github.com/jprichardson/node-fs-extra)
-- Stable with [Graceful FS](https://github.com/isaacs/node-graceful-fs)
+- Extract multiple types
+- Extracts integer and float types
+- It infers the type from a string
+- There are simple type converters
 
 ## Installation
 
