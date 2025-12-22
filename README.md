@@ -130,7 +130,7 @@ Infers types.
 > typof('true'); // [ "string", "boolean" ]
 > typof(true); // [ "boolean" ]
 >
-> typof('{"key": "value"}'); // [ "string", "object" ]
+> typof('{"key":"value"}'); // [ "string", "object" ]
 > typof({ key: 'value' }); // [ "object" ]
 >
 > typof('["test"]'); // [ "string", "array" ]
@@ -192,6 +192,8 @@ Convert to number.
 >
 > ```typescript
 > number('0.5'); // 0.5
+> number(0.5); // 0.5
+> number('test'); // NaN
 > ```
 
 <br/>
@@ -211,6 +213,7 @@ Convert to integer.
 > ```typescript
 > integer('0.5'); // 0
 > integer(0.5); // 0
+> integer('test'); // NaN
 > ```
 
 <br/>
