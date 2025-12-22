@@ -58,9 +58,7 @@ export const typof = (value: unknown): Types[] => {
     types.push('array');
   } else if (value === null) {
     types.push('null');
-  } else if (value === undefined) {
-    types.push('undefined');
-  }
+  } else if (value === undefined) types.push('undefined');
 
   return types;
 };
