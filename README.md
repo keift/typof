@@ -111,9 +111,9 @@ import { typof } from 'typof';
 
 Infers types.
 
-> | Parameter | Default | Description                         |
-> | --------- | ------- | ----------------------------------- |
-> | value     |         | Unknown<br/>Value to extract types. |
+> | Parameter | Type    | Default | Description             |
+> | --------- | ------- | ------- | ----------------------- |
+> | value     | Unknown |         | Value to extract types. |
 >
 > returns [Types]\[]
 >
@@ -159,9 +159,9 @@ Infers types.
 
 Convert to string.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
 > returns [String]
 >
@@ -183,9 +183,9 @@ Convert to string.
 
 Convert to number.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
 > returns [Number]
 >
@@ -201,9 +201,9 @@ Convert to number.
 
 Convert to integer.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
 > returns [Number]
 >
@@ -220,9 +220,9 @@ Convert to integer.
 
 Convert to boolean.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
 > returns [Boolean] | Value
 >
@@ -240,9 +240,9 @@ Convert to boolean.
 
 Convert to object.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
 > returns [Object] | Value
 >
@@ -259,9 +259,9 @@ Convert to object.
 
 Convert to array.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
 > returns [Array] | Value
 >
@@ -278,11 +278,11 @@ Convert to array.
 
 Convert to date.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
-> returns [Date] | Value
+> returns [Date]
 >
 > Example:
 >
@@ -297,9 +297,9 @@ Convert to date.
 
 Convert to null.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
 > returns [Null] | Value
 >
@@ -317,9 +317,9 @@ Convert to null.
 
 Convert to undefined.
 
-> | Parameter | Default | Description                   |
-> | --------- | ------- | ----------------------------- |
-> | value     |         | Unknown<br/>Value to convert. |
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | value     | Unknown |         | Value to convert. |
 >
 > returns [Undefined] | Value
 >
