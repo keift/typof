@@ -22,9 +22,7 @@ export const typof = (value: unknown): Types[] => {
 
       if (Number.isInteger(number)) {
         types.push('integer');
-      } else if (!Number.isInteger(number)) {
-        types.push('float');
-      }
+      } else types.push('float');
     }
 
     if (value === 'true' || value === 'false') types.push('boolean');
@@ -45,9 +43,7 @@ export const typof = (value: unknown): Types[] => {
 
     if (Number.isInteger(value)) {
       types.push('integer');
-    } else if (!Number.isInteger(value)) {
-      types.push('float');
-    }
+    } else types.push('float');
   } else if (typeof value === 'boolean') {
     types.push('boolean');
   } else if (isObject(value) && !Array.isArray(value)) {
