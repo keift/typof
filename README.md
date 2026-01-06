@@ -80,7 +80,7 @@ deno add typof
 Briefly as follows.
 
 ```typescript
-Typof
+typof
 │
 ├── typof(value)
 ├── string(value)
