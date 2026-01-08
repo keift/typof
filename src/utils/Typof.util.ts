@@ -1,5 +1,5 @@
-import { isISODate } from './isISODate.util';
-import { isObject } from './isObject.util';
+import { isISODate } from './IsISODate.util';
+import { isObject } from './IsObject.util';
 
 import type { Types } from '../types/Types.type';
 
