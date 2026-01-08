@@ -62,7 +62,6 @@ export const typof = (value: unknown): Types[] => {
 export const string = (value: unknown) => {
   const types = typof(value);
 
-  // eslint-disable-next-line no-restricted-syntax
   return types.includes('object') || types.includes('array') ? JSON.stringify(value) : String(value);
 };
 

@@ -1,6 +1,6 @@
 {
   "name": "typof",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Infer types.",
   "license": "MIT",
   "homepage": "https://github.com/keift/typof",
