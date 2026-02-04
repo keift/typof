@@ -112,7 +112,7 @@ Infer types.
 
 > | Parameter | Type    | Default | Description           |
 > | --------- | ------- | ------- | --------------------- |
-> | value     | Unknown |         | Value to infer types. |
+> | `value`   | Unknown |         | Value to infer types. |
 >
 > returns [Types]\[]
 >
@@ -160,7 +160,7 @@ Convert to string.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns [String]
 >
@@ -184,7 +184,7 @@ Convert to number.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns [Number]
 >
@@ -204,7 +204,7 @@ Convert to integer.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns [Number]
 >
@@ -224,7 +224,7 @@ Convert to boolean.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns [Boolean] | Value
 >
@@ -244,7 +244,7 @@ Convert to date.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns [Date] | Value
 >
@@ -264,7 +264,7 @@ Convert to object.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns [Object] | Value
 >
@@ -283,7 +283,7 @@ Convert to array.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns Unknown\[] | Value
 >
@@ -302,7 +302,7 @@ Convert to null.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns [Null] | Value
 >
@@ -322,7 +322,7 @@ Convert to undefined.
 
 > | Parameter | Type    | Default | Description       |
 > | --------- | ------- | ------- | ----------------- |
-> | value     | Unknown |         | Value to convert. |
+> | `value`   | Unknown |         | Value to convert. |
 >
 > returns [Undefined] | Value
 >
