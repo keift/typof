@@ -60,17 +60,17 @@ export const typof = (value: unknown): Types[] => {
   return types;
 };
 
-export const string = (value: unknown) => {
+export const string = (value: unknown): string => {
   const types = typof(value);
 
   return types.includes('object') || types.includes('array') ? JSON.stringify(value) : String(value);
 };
 
-export const number = (value: unknown) => {
+export const number = (value: unknown): number => {
   return typof(value).includes('number') ? Number(value) : NaN;
 };
 
-export const integer = (value: unknown) => {
+export const integer = (value: unknown): number => {
   return typof(value).includes('number') ? Math.trunc(Number(value)) : NaN;
 };
 
