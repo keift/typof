@@ -4,7 +4,7 @@ import { isObject } from './IsObject.util';
 import type { Types } from '../types/Types.type';
 import type { UnknownObject } from '../types/UnknownObject.type';
 
-export const typof = (value: unknown): Types[] => {
+export const typof = (value: unknown) => {
   const types: Types[] = [];
 
   if (typeof value === 'string') {
