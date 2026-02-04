@@ -2,6 +2,7 @@ import { isISODate } from './IsISODate.util';
 import { isObject } from './IsObject.util';
 
 import type { Types } from '../types/Types.type';
+import type { UnknownObject } from '../types/UnknownObject.type';
 
 export const typof = (value: unknown): Types[] => {
   const types: Types[] = [];
@@ -89,10 +90,10 @@ export const date = <Value>(value: Value): Date | Value => {
   return typof(value).includes('date') ? new Date(value as string) : value;
 };
 
-export const object = <Value>(value: Value): object | Value => {
+export const object = <Value>(value: Value): UnknownObject | Value => {
   const types = typof(value);
 
-  return types.includes('object') && types.includes('string') ? (JSON.parse(value as string) as object) : value;
+  return types.includes('object') && types.includes('string') ? (JSON.parse(value as string) as UnknownObject) : value;
 };
 
 export const array = <Value>(value: Value): unknown[] | Value => {
