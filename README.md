@@ -93,7 +93,8 @@ typof
 ├── _null(value)
 ├── _undefined(value)
 │
-└── type Types
+├── type Types
+└── type UnknownObject
 ```
 
 ### Import
