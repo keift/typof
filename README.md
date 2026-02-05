@@ -18,10 +18,10 @@
   <img src="./assets/logo.png" width="350px"/>
   <br/>
   <br/>
-  <img src="https://img.shields.io/npm/v/typof?label=version&color=%23633BFF"/>
-  <img src="https://img.shields.io/npm/l/typof?label=license&color=%23633BFF"/>
-  <img src="https://img.shields.io/npm/dt/typof?label=downloads&color=%2300927F"/>
-  <img src="https://img.shields.io/npm/unpacked-size/typof?label=size&color=%2300927F"/>
+  <img src="https://img.shields.io/npm/v/typof?label=version&color=615fff"/>
+  <img src="https://img.shields.io/npm/l/typof?label=license&color=615fff"/>
+  <img src="https://img.shields.io/npm/dt/typof?label=downloads&color=00bc7d"/>
+  <img src="https://img.shields.io/npm/unpacked-size/typof?label=size&color=00bc7d"/>
 </div>
 
 ## Contents
