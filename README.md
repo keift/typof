@@ -1,15 +1,3 @@
-[String]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
-[Number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
-[Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-[Date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-[Buffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
-[Promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-[Void]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Undefined
-[Null]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null
-[Undefined]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Undefined
-
-<!---->
-
 [Types]: ./src/types/types.ts
 [UnknownObject]: ./src/types/unknown-object.ts
 
@@ -163,7 +151,7 @@ Convert to string.
 > | --------- | ------- | ------- | ----------------- |
 > | `value`   | Unknown |         | Value to convert. |
 >
-> returns [String]
+> returns String
 >
 > Example:
 >
@@ -187,7 +175,7 @@ Convert to number.
 > | --------- | ------- | ------- | ----------------- |
 > | `value`   | Unknown |         | Value to convert. |
 >
-> returns [Number]
+> returns Number
 >
 > Example:
 >
@@ -207,7 +195,7 @@ Convert to integer.
 > | --------- | ------- | ------- | ----------------- |
 > | `value`   | Unknown |         | Value to convert. |
 >
-> returns [Number]
+> returns Number
 >
 > Example:
 >
@@ -227,7 +215,7 @@ Convert to boolean.
 > | --------- | ------- | ------- | ----------------- |
 > | `value`   | Unknown |         | Value to convert. |
 >
-> returns [Boolean] | Value
+> returns Boolean | Value
 >
 > Example:
 >
@@ -247,7 +235,7 @@ Convert to date.
 > | --------- | ------- | ------- | ----------------- |
 > | `value`   | Unknown |         | Value to convert. |
 >
-> returns [Date] | Value
+> returns Date | Value
 >
 > Example:
 >
@@ -305,7 +293,7 @@ Convert to null.
 > | --------- | ------- | ------- | ----------------- |
 > | `value`   | Unknown |         | Value to convert. |
 >
-> returns [Null] | Value
+> returns Null | Value
 >
 > Example:
 >
@@ -325,7 +313,7 @@ Convert to undefined.
 > | --------- | ------- | ------- | ----------------- |
 > | `value`   | Unknown |         | Value to convert. |
 >
-> returns [Undefined] | Value
+> returns Undefined | Value
 >
 > Example:
 >
