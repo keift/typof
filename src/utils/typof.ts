@@ -1,8 +1,8 @@
-import { isISODate } from './IsISODate.util';
-import { isObject } from './IsObject.util';
+import { isISODate } from './is-iso-date';
+import { isObject } from './is-object';
 
-import type { Types } from '../types/Types.type';
-import type { UnknownObject } from '../types/UnknownObject.type';
+import type { Types } from '../types/types';
+import type { UnknownObject } from '../types/unknown-object';
 
 export const typof = (value: unknown): Types[] => {
   const types: Types[] = [];

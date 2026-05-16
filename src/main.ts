@@ -1,3 +1,3 @@
-export * from './utils/Typof.util';
+export * from './utils/typof';
 
-export type * from './exports/Types.export';
+export type * from './exports/types';
