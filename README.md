@@ -10,8 +10,8 @@
 
 <!---->
 
-[Types]: ./src/types/Types.type.ts
-[UnknownObject]: ./src/types/UnknownObject.type.ts
+[Types]: ./src/types/types.ts
+[UnknownObject]: ./src/types/unknown-object.ts
 
 <div align="center">
   <br/>
