@@ -1,8 +1,8 @@
-import { isISODate } from './is-iso-date';
-import { isObject } from './is-object';
+import { is_iso_date } from './is_iso_date';
+import { is_object } from './is_object';
 
 import type { Types } from '../types/types';
-import type { UnknownObject } from '../types/unknown-object';
+import type { UnknownObject } from '../types/unknown_object';
 
 export const typof = (value: unknown): Types[] => {
   const types: Types[] = [];
@@ -28,11 +28,11 @@ export const typof = (value: unknown): Types[] => {
 
     if (value === 'true' || value === 'false') types.push('boolean');
 
-    if (isISODate(value)) types.push('date');
+    if (is_iso_date(value)) types.push('date');
 
-    if (isObject(value) && !Array.isArray(JSON.parse(value))) types.push('object');
+    if (is_object(value) && !Array.isArray(JSON.parse(value))) types.push('object');
 
-    if (isObject(value) && Array.isArray(JSON.parse(value))) types.push('array');
+    if (is_object(value) && Array.isArray(JSON.parse(value))) types.push('array');
 
     if (value === 'null') types.push('null');
 
@@ -47,11 +47,11 @@ export const typof = (value: unknown): Types[] => {
     } else types.push('float');
   } else if (typeof value === 'boolean') {
     types.push('boolean');
-  } else if (isObject(value) && !Array.isArray(value)) {
+  } else if (is_object(value) && !Array.isArray(value)) {
     types.push('object');
 
     if (value instanceof Date) types.push('date');
-  } else if (isObject(value) && Array.isArray(value)) {
+  } else if (is_object(value) && Array.isArray(value)) {
     types.push('array');
   } else if (value === null) {
     types.push('null');

@@ -1,5 +1,5 @@
 [Types]: ./src/types/types.ts
-[UnknownObject]: ./src/types/unknown-object.ts
+[UnknownObject]: ./src/types/unknown_object.ts
 
 <div align="center">
   <br/>
