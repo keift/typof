@@ -114,31 +114,31 @@ Infer types.
 > // Index zero always ensures reliable type checking. As the index increases, species depth also increases.
 > if (typof('0.5')[0] === 'string') console.log('This is a string.');
 >
-> typof('test'); // [ "string" ]
+> typof('test'); // ['string']
 >
-> typof('0'); // [ "string", "number", "integer" ]
-> typof(0); // [ "number", "integer" ]
+> typof('0'); // ['string', 'number', 'integer']
+> typof(0); // ['number', 'integer']
 >
-> typof('0.5'); // [ "string", "number", "float" ]
-> typof(0.5); // [ "number", "float" ]
+> typof('0.5'); // ['string', 'number', 'float']
+> typof(0.5); // ['number', 'float']
 >
-> typof('true'); // [ "string", "boolean" ]
-> typof(true); // [ "boolean" ]
+> typof('true'); // ['string', 'boolean']
+> typof(true); // ['boolean']
 >
-> typof('2025-01-01'); // [ "string", "date" ]
-> typof(new Date('2025-01-01')); // [ "object", "date" ]
+> typof('2025-01-01'); // ['string', 'date']
+> typof(new Date('2025-01-01')); // ['object', 'date']
 >
-> typof('{"key":"value"}'); // [ "string", "object" ]
-> typof({ key: 'value' }); // [ "object" ]
+> typof('{"key":"value"}'); // ['string', 'object']
+> typof({ key: 'value' }); // ['object']
 >
-> typof('["test"]'); // [ "string", "array" ]
-> typof(['test']); // [ "array" ]
+> typof('["test"]'); // ['string', 'array']
+> typof(['test']); // ['array']
 >
-> typof('null'); // [ "string", "null" ]
-> typof(null); // [ "null" ]
+> typof('null'); // ['string', 'null']
+> typof(null); // ['null']
 >
-> typof('undefined'); // [ "string", "undefined" ]
-> typof(undefined); // [ "undefined" ]
+> typof('undefined'); // ['string', 'undefined']
+> typof(undefined); // ['undefined']
 > ```
 
 <br/>
@@ -156,13 +156,13 @@ Convert to string.
 > Example:
 >
 > ```typescript
-> string(0.5); // "0.5"
-> string(true); // "true"
-> string(new Date('2025-01-01')); // "2025-01-01T00:00:00.000Z"
+> string(0.5); // '0.5'
+> string(true); // 'true'
+> string(new Date('2025-01-01')); // '2025-01-01T00:00:00.000Z'
 > string({ key: 'value' }); // '{"key":"value"}'
 > string(['test']); // '["test"]'
-> string(null); // "null"
-> string(undefined); // "undefined"
+> string(null); // 'null'
+> string(undefined); // 'undefined'
 > ```
 
 <br/>
@@ -222,7 +222,7 @@ Convert to boolean.
 > ```typescript
 > boolean('true'); // true
 > boolean(true); // true
-> boolean('test'); // "test"
+> boolean('test'); // 'test'
 > ```
 
 <br/>
@@ -242,7 +242,7 @@ Convert to date.
 > ```typescript
 > date('2025-01-01'); // 2025-01-01T00:00:00.000Z
 > date(new Date('2025-01-01')); // 2025-01-01T00:00:00.000Z
-> date('test'); // "test"
+> date('test'); // 'test'
 > ```
 
 <br/>
@@ -260,7 +260,7 @@ Convert to object.
 > Example:
 >
 > ```typescript
-> object('{"key":"value"}'); // { key: "value" }
+> object('{"key":"value"}'); // { key: 'value' }
 > object('["test"]'); // '["test"]'
 > ```
 
@@ -279,7 +279,7 @@ Convert to array.
 > Example:
 >
 > ```typescript
-> array('["test"]'); // [ "test" ]
+> array('["test"]'); // ['test']
 > array('{"key":"value"}'); // '{"key":"value"}'
 > ```
 
@@ -300,7 +300,7 @@ Convert to null.
 > ```typescript
 > _null('null'); // null
 > _null(null); // null
-> _null('test'); // "test"
+> _null('test'); // 'test'
 > ```
 
 <br/>
@@ -320,7 +320,7 @@ Convert to undefined.
 > ```typescript
 > _undefined('undefined'); // undefined
 > _undefined(undefined); // undefined
-> _undefined('test'); // "test"
+> _undefined('test'); // 'test'
 > ```
 
 ### Types
