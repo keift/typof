@@ -225,6 +225,7 @@ Convert to float.
 > float(0, 2); // '0.00'
 > float(0.1234, 2); // '0.12'
 > float(0.1234, 4); // '0.1234'
+> float('test'); // 'test'
 > ```
 
 <br/>
