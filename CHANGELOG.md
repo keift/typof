@@ -4,4 +4,4 @@
 
 ### Changed
 
-- **Date priority.** The value 'date' will occupy the zero index of a date object. Previously, 'object' occupied the zero index.
+- **Date priority.** During type inference, the date type will be located at the zero index of the date object. Previously, the object type was located at the zero index.
