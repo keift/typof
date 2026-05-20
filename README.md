@@ -74,6 +74,7 @@ typof
 ├── string(value)
 ├── number(value)
 ├── integer(value)
+├── float(value)
 ├── boolean(value)
 ├── date(value)
 ├── object(value)
