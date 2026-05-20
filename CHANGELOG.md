@@ -4,4 +4,4 @@
 
 ### Changed
 
-- **Date has priority.** The value 'date' will occupy the zero index of a date object. Previously, 'object' occupied the zero index.
+- **Date priority.** The value 'date' will occupy the zero index of a date object. Previously, 'object' occupied the zero index.
