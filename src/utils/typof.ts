@@ -74,6 +74,10 @@ export const integer = (value: unknown): number => {
   return typof(value).includes('number') ? Math.trunc(Number(value)) : NaN;
 };
 
+export const float = <Value>(value: Value, fraction_digits: number): string | Value => {
+  return typof(value).includes('number') ? Number(value).toFixed(fraction_digits) : value;
+};
+
 export const boolean = <Value>(value: Value): boolean | Value => {
   const types = typof(value);
 

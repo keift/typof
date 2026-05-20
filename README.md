@@ -207,6 +207,27 @@ Convert to integer.
 
 <br/>
 
+`float(value)`
+
+Convert to float.
+
+> | Parameter | Type    | Default | Description       |
+> | --------- | ------- | ------- | ----------------- |
+> | `value`   | Unknown |         | Value to convert. |
+>
+> returns String | Value
+>
+> Example:
+>
+> ```typescript
+> float('0', 2); // '0.00'
+> float(0, 2); // '0.00'
+> float(0.1234, 2); // '0.12'
+> float(0.1234, 4); // '0.1234'
+> ```
+
+<br/>
+
 `boolean(value)`
 
 Convert to boolean.
