@@ -126,7 +126,7 @@ Infer types.
 > typof(true); // ['boolean']
 >
 > typof('2025-01-01'); // ['string', 'date']
-> typof(new Date('2025-01-01')); // ['object', 'date']
+> typof(new Date('2025-01-01')); // ['date', 'object']
 >
 > typof('{"key":"value"}'); // ['string', 'object']
 > typof({ key: 'value' }); // ['object']

@@ -14,7 +14,7 @@ if (string(typof('true')) !== '["string","boolean"]') throw new Error(`❌ Error
 if (string(typof(true)) !== '["boolean"]') throw new Error(`❌ Error: ${string(typof(true))}`);
 
 if (string(typof('2025-01-01')) !== '["string","date"]') throw new Error(`❌ Error: ${string(typof('2025-01-01'))}`);
-if (string(typof(new Date('2025-01-01'))) !== '["object","date"]') throw new Error(`❌ Error: ${string(typof(new Date('2025-01-01')))}`);
+if (string(typof(new Date('2025-01-01'))) !== '["date","object"]') throw new Error(`❌ Error: ${string(typof(new Date('2025-01-01')))}`);
 
 if (string(typof('{"key": "value"}')) !== '["string","object"]') throw new Error(`❌ Error: ${string(typof('{"key": "value"}'))}`);
 if (string(typof({ key: 'value' })) !== '["object"]') throw new Error(`❌ Error: ${string(typof({ key: 'value' }))}`);

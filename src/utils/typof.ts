@@ -48,9 +48,9 @@ export const typof = (value: unknown): Types[] => {
   } else if (typeof value === 'boolean') {
     types.push('boolean');
   } else if (is_object(value) && !Array.isArray(value)) {
-    types.push('object');
-
     if (value instanceof Date) types.push('date');
+
+    types.push('object');
   } else if (is_object(value) && Array.isArray(value)) {
     types.push('array');
   } else if (value === null) {
@@ -78,9 +78,9 @@ export const boolean = <Value>(value: Value): boolean | Value => {
   const types = typof(value);
 
   if (types.includes('boolean') && types.includes('string')) {
-    if (value === 'true') {
+    if ((value as string).trim() === 'true') {
       return true;
-    } else if (value === 'false') {
+    } else if ((value as string).trim() === 'false') {
       return false;
     } else return value;
   } else return value;
