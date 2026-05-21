@@ -208,13 +208,14 @@ Convert to integer.
 
 <br/>
 
-`float(value)`
+`float(value, fraction_digits)`
 
 Convert to float.
 
-> | Parameter | Type    | Default | Description       |
-> | --------- | ------- | ------- | ----------------- |
-> | `value`   | Unknown |         | Value to convert. |
+> | Parameter         | Type    | Default | Description       |
+> | ----------------- | ------- | ------- | ----------------- |
+> | `value`           | Unknown |         | Value to convert. |
+> | `fraction_digits` | Number  |         | Fraction digits.  |
 >
 > returns String | Value
 >
@@ -225,7 +226,7 @@ Convert to float.
 > float(0, 2); // '0.00'
 > float(0.1234, 2); // '0.12'
 > float(0.1234, 4); // '0.1234'
-> float('test'); // 'test'
+> float('test', 2); // 'test'
 > ```
 
 <br/>

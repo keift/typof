@@ -4,7 +4,7 @@
 
 ### Added
 
-- **Float converter.** It adds a fraction of the desired length to the given number. Due to the nature of numbers, these fractions are only visible when they are in string form.
+- **Float converter.** It adds the desired fractional digits to the given number. Due to the nature of numbers, these fractions are only visible in string form.
 
 ### Changed
 
