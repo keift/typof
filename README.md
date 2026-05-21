@@ -224,7 +224,7 @@ Convert to float.
 > ```typescript
 > float('0', 2); // '0.00'
 > float(0, 2); // '0.00'
-> float(0.5555, 2); // '0.12'
+> float(0.5555, 2); // '0.55'
 > float(0.5555, 4); // '0.5555'
 > float('test', 2); // 'test'
 > ```
