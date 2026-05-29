@@ -10,11 +10,15 @@ export const typof = (value: unknown): Types[] => {
   if (typeof value === 'string') {
     value = value.trim();
 
-    if (typeof value !== 'string') return types;
+    if (typeof value !== 'string') {
+      return types;
+    }
 
     types.push('string');
 
-    if (value === '') return types;
+    if (value === '') {
+      return types;
+    }
 
     if (Number.isFinite(Number(value))) {
       const number = Number(value);
@@ -23,39 +27,61 @@ export const typof = (value: unknown): Types[] => {
 
       if (Number.isInteger(number)) {
         types.push('integer');
-      } else types.push('float');
+      } else {
+        types.push('float');
+      }
     }
 
-    if (value === 'true' || value === 'false') types.push('boolean');
+    if (value === 'true' || value === 'false') {
+      types.push('boolean');
+    }
 
-    if (is_iso_date(value)) types.push('date');
+    if (is_iso_date(value)) {
+      types.push('date');
+    }
 
-    if (is_object(value) && !Array.isArray(JSON.parse(value))) types.push('object');
+    if (is_object(value) && !Array.isArray(JSON.parse(value))) {
+      types.push('object');
+    }
 
-    if (is_object(value) && Array.isArray(JSON.parse(value))) types.push('array');
+    if (is_object(value) && Array.isArray(JSON.parse(value))) {
+      types.push('array');
+    }
 
-    if (value === 'null') types.push('null');
+    if (value === 'null') {
+      types.push('null');
+    }
 
-    if (value === 'undefined') types.push('undefined');
+    if (value === 'undefined') {
+      types.push('undefined');
+    }
   } else if (typeof value === 'number') {
-    if (!Number.isFinite(value)) return types;
+    if (!Number.isFinite(value)) {
+      return types;
+    }
 
     types.push('number');
 
     if (Number.isInteger(value)) {
       types.push('integer');
-    } else types.push('float');
+    } else {
+      types.push('float');
+    }
   } else if (typeof value === 'boolean') {
     types.push('boolean');
   } else if (is_object(value) && !Array.isArray(value)) {
-    if (value instanceof Date) types.push('date');
+    if (value instanceof Date) {
+      types.push('date');
+    }
 
     types.push('object');
   } else if (is_object(value) && Array.isArray(value)) {
     types.push('array');
   } else if (value === null) {
     types.push('null');
-  } else if (value === undefined) types.push('undefined');
+  } else if (value === undefined) {
+    types.push('undefined');
+  }
 
   return types;
 };
@@ -86,8 +112,12 @@ export const boolean = <Value>(value: Value): boolean | Value => {
       return true;
     } else if ((value as string).trim() === 'false') {
       return false;
-    } else return value;
-  } else return value;
+    } else {
+      return value;
+    }
+  } else {
+    return value;
+  }
 };
 
 export const date = <Value>(value: Value): Date | Value => {

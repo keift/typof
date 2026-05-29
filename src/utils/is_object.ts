@@ -1,5 +1,7 @@
 export const is_object = (value: unknown) => {
-  if (typeof value === 'object' && value !== null) return true;
+  if (typeof value === 'object' && value !== null) {
+    return true;
+  }
 
   if (typeof value === 'string') {
     try {
