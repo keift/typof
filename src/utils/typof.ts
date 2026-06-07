@@ -92,17 +92,11 @@ export const string = (value: unknown): string => {
   return types.includes('object') || types.includes('array') ? JSON.stringify(value) : String(value);
 };
 
-export const number = (value: unknown): number => {
-  return typof(value).includes('number') ? Number(value) : NaN;
-};
+export const number = (value: unknown): number => (typof(value).includes('number') ? Number(value) : NaN);
 
-export const integer = (value: unknown): number => {
-  return typof(value).includes('number') ? Math.trunc(Number(value)) : NaN;
-};
+export const integer = (value: unknown): number => (typof(value).includes('number') ? Math.trunc(Number(value)) : NaN);
 
-export const float = <Value>(value: Value, fraction_digits: number): string | Value => {
-  return typof(value).includes('number') ? Number(value).toFixed(fraction_digits) : value;
-};
+export const float = <Value>(value: Value, fraction_digits: number): string | Value => (typof(value).includes('number') ? Number(value).toFixed(fraction_digits) : value);
 
 export const boolean = <Value>(value: Value): boolean | Value => {
   const types = typof(value);
@@ -120,9 +114,7 @@ export const boolean = <Value>(value: Value): boolean | Value => {
   }
 };
 
-export const date = <Value>(value: Value): Date | Value => {
-  return typof(value).includes('date') ? new Date(value as string) : value;
-};
+export const date = <Value>(value: Value): Date | Value => (typof(value).includes('date') ? new Date(value as string) : value);
 
 export const object = <Value>(value: Value): UnknownObject | Value => {
   const types = typof(value);
@@ -136,10 +128,6 @@ export const array = <Value>(value: Value): unknown[] | Value => {
   return types.includes('array') && types.includes('string') ? (JSON.parse(value as string) as unknown[]) : value;
 };
 
-export const _null = <Value>(value: Value): null | Value => {
-  return typof(value).includes('null') ? null : value;
-};
+export const _null = <Value>(value: Value): null | Value => (typof(value).includes('null') ? null : value);
 
-export const _undefined = <Value>(value: Value): undefined | Value => {
-  return typof(value).includes('undefined') ? undefined : value;
-};
+export const _undefined = <Value>(value: Value): undefined | Value => (typof(value).includes('undefined') ? undefined : value);
