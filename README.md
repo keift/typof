@@ -80,7 +80,9 @@ typof
 ├── object(value)
 ├── array(value)
 ├── _null(value)
-├── _undefined(value)
+└── _undefined(value)
+
+typof/types
 │
 ├── type Types
 └── type UnknownObject
