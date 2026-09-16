@@ -4,7 +4,7 @@
   "description": "Infer types.",
   "license": "MIT",
   "homepage": "https://github.com/keift/typof",
-  "bugs": "https://github.com/keift/typof/issues",
+  "repository": "https://github.com/keift/typof",
   "scripts": {
     "tests": "bun run lint && bun test",
     "retouch": "bun run prettier",
@@ -28,10 +28,6 @@
     "rulint": "latest",
     "tsdown": "latest",
     "unrun": "latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/keift/typof"
   },
   "keywords": [
     "type",
